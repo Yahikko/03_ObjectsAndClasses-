@@ -16,6 +16,15 @@ public class Cat
 
     }
 
+    public Double getFodder(){
+        return(weight - originWeight);
+    }
+
+    public void pee(){
+        weight = weight - 10;
+        System.out.println("Cat went to the side of the cat litter box");
+    }
+
     public void meow()
     {
         weight = weight - 1;
@@ -37,7 +46,7 @@ public class Cat
         return weight;
     }
 
-    public String getStatus()
+        public String getStatus()
     {
         if(weight < minWeight) {
             return "Dead";
